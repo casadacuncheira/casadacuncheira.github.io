@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <!-- Google Consent Mode v2 (Strict Zero-Tracking Default) -->
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    
+    // Check for existing consent in localStorage before GTM fires
+    var savedConsent = null;
+    try {
+      var raw = localStorage.getItem('cdc_cookie_consent_v1');
+      if (raw) { savedConsent = JSON.parse(raw); }
+    } catch(e) {}
+
+    var analyticsGranted = (savedConsent && savedConsent.analytics === true);
+
+    gtag('consent', 'default', {
+      'analytics_storage': analyticsGranted ? 'granted' : 'denied',
+      'ad_storage': 'denied',
+      'ad_user_data': 'denied',
+      'ad_personalization': 'denied',
+      'wait_for_update': 500
+    });
+
+    // Only load GTM script immediately if prior explicit consent was granted
+    if (analyticsGranted) {
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || []; w[l].push({
+          'gtm.start': new Date().getTime(), event: 'gtm.js'
+        }); var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+      })(window, document, 'script', 'dataLayer', 'GTM-WFGJHSJ4');
+    }
+  </script>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Primary SEO Meta Tags -->
+  <title>Política de Privacidad y Protección de Datos | Casa da Cuncheira</title>
+  <meta name="description" content="Tratamiento de datos personales, bases jurídicas RGPD, registro oficial de huéspedes y ejercicio de derechos en Casa da Cuncheira." />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+  <link rel="canonical" href="https://www.casadacuncheira.com/privacidad" />
+
+  <!-- Icons -->
+  <link rel="icon" type="image/svg+xml" href="/images/logo.svg" />
+  <link rel="apple-touch-icon" href="/images/logo.svg" />
+  <meta name="theme-color" content="#1e293b" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.casadacuncheira.com/privacidad" />
+  <meta property="og:title" content="Política de Privacidad y Protección de Datos | Casa da Cuncheira" />
+  <meta property="og:description" content="Tratamiento de datos personales, bases jurídicas RGPD, registro oficial de huéspedes y ejercicio de derechos en Casa da Cuncheira." />
+  <meta property="og:image" content="https://www.casadacuncheira.com/images/hero_optimized.webp" />
+  <meta property="og:site_name" content="Casa da Cuncheira" />
+  <meta property="og:locale" content="es_ES" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:url" content="https://www.casadacuncheira.com/" />
+  <meta name="twitter:title" content="Política de Privacidad y Protección de Datos | Casa da Cuncheira" />
+  <meta name="twitter:description" content="Tratamiento de datos personales, bases jurídicas RGPD, registro oficial de huéspedes y ejercicio de derechos en Casa da Cuncheira." />
+  <meta name="twitter:image" content="https://www.casadacuncheira.com/images/hero_optimized.webp" />
+
+  <!-- Structured Data / JSON-LD -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://www.casadacuncheira.com/#website",
+      "url": "https://www.casadacuncheira.com/",
+      "name": "Casa da Cuncheira",
+      "description": "Alojamiento vacacional en Lira, Carnota (Costa da Morte)",
+      "inLanguage": [
+        "es",
+        "gl",
+        "en",
+        "fr",
+        "de",
+        "it",
+        "pt"
+      ]
+    },
+    {
+      "@type": [
+        "LodgingBusiness",
+        "VacationRental"
+      ],
+      "@id": "https://www.casadacuncheira.com/#lodging",
+      "name": "Casa da Cuncheira",
+      "identifier": "VUT-CO-002236",
+      "description": "Alojamiento vacacional en Lira, Carnota. Casa completa para 6 personas con 4 habitaciones, 2 baños, terraza con vistas al mar, jardín y wifi de alta velocidad en plena Costa da Morte.",
+      "url": "https://www.casadacuncheira.com/",
+      "image": [
+        "https://www.casadacuncheira.com/images/hero_optimized.webp",
+        "https://www.casadacuncheira.com/images/house/house_1.webp",
+        "https://www.casadacuncheira.com/images/house/living_room_1.webp",
+        "https://www.casadacuncheira.com/images/house/terrace_2.webp"
+      ],
+      "telephone": "+34 607 952 250",
+      "email": "casadacuncheira@gmail.com",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Aldea Carballal, 70",
+        "addressLocality": "Carnota",
+        "addressRegion": "A Coruña",
+        "postalCode": "15292",
+        "addressCountry": "ES"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 42.8033613,
+        "longitude": -9.1235535
+      },
+      "numberOfRooms": 4,
+      "occupancy": {
+        "@type": "QuantitativeValue",
+        "maxValue": 6
+      },
+      "petsAllowed": false,
+      "amenityFeature": [
+        {
+          "@type": "LocationFeatureSpecification",
+          "name": "WiFi mediante conexión 5G de alta velocidad",
+          "value": true
+        },
+        {
+          "@type": "LocationFeatureSpecification",
+          "name": "Vistas al mar",
+          "value": true
+        },
+        {
+          "@type": "LocationFeatureSpecification",
+          "name": "Cocina totalmente equipada",
+          "value": true
+        },
+        {
+          "@type": "LocationFeatureSpecification",
+          "name": "Aire acondicionado",
+          "value": true
+        },
+        {
+          "@type": "LocationFeatureSpecification",
+          "name": "Calefacción",
+          "value": true
+        },
+        {
+          "@type": "LocationFeatureSpecification",
+          "name": "Jardín y terraza exterior",
+          "value": true
+        },
+        {
+          "@type": "LocationFeatureSpecification",
+          "name": "Smart TV",
+          "value": true
+        },
+        {
+          "@type": "LocationFeatureSpecification",
+          "name": "Lavandería",
+          "value": true
+        },
+        {
+          "@type": "LocationFeatureSpecification",
+          "name": "Auto check-in / Entrada autónoma",
+          "value": true
+        }
+      ],
+      "sameAs": [
+        "https://www.instagram.com/casa_da_cuncheira/",
+        "https://www.facebook.com/casadacuncheira/"
+      ]
+    }
+  ]
+}
+  </script>
+  <script type="module" crossorigin src="/assets/index-CkTUeoT1.js"></script>
+  <link rel="modulepreload" crossorigin href="/assets/vendor-react-DZSZ_G94.js">
+  <link rel="modulepreload" crossorigin href="/assets/vendor-maps-BFu6mpGU.js">
+  <link rel="modulepreload" crossorigin href="/assets/vendor-ui-BhmX4o-y.js">
+  <link rel="stylesheet" crossorigin href="/assets/index-Bi2lwQzO.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Casa da Cuncheira",
+        "item": "https://www.casadacuncheira.com/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Política de Privacidad y Protección de Datos",
+        "item": "https://www.casadacuncheira.com/privacidad"
+      }
+    ]
+  }
+  </script>
+</head>
+
+<body>
+  <div id="root">
+    <header style="padding: 20px; background-color: #1e293b; color: #ffffff;">
+      <nav aria-label="Navegación">
+        <a href="/" style="color: #ffffff; text-decoration: none; font-weight: bold; font-size: 1.25rem;">Casa da Cuncheira</a>
+        <span style="margin: 0 10px;">|</span>
+        <a href="/" style="color: #ffffff; text-decoration: none; margin: 0 10px;">Inicio</a>
+        <a href="/nature/que-ver-en-carnota" style="color: #ffffff; text-decoration: none; margin: 0 10px;">Qué ver en Carnota</a>
+        <a href="/nature/lira-carnota" style="color: #ffffff; text-decoration: none; margin: 0 10px;">Lira</a>
+        <a href="/gastronomy" style="color: #ffffff; text-decoration: none; margin: 0 10px;">Gastronomía</a>
+        <a href="/#house" style="color: #ffffff; text-decoration: none; margin: 0 10px;">La Casa</a>
+        <a href="/#contact" style="color: #ffffff; text-decoration: none; margin: 0 10px;">Contacto</a>
+        <a href="https://bookonline.pro/es/property/350327" rel="noopener noreferrer" style="color: #ffffff; text-decoration: underline; margin-left: 15px;">Reservar</a>
+      </nav>
+    </header>
+
+    <main style="font-family: system-ui, -apple-system, sans-serif; line-height: 1.6; color: #334155; padding: 40px 20px; max-width: 1000px; margin: 0 auto;">
+      <article>
+        <h1 style="font-size: 2.5rem; color: #0f172a; margin-bottom: 20px;">Política de Privacidad y Protección de Datos</h1>
+        
+      <p style="color: #64748b; font-size: 0.875rem; margin-bottom: 2rem;">Última actualización: Agosto 2026 • En cumplimiento del Reglamento (UE) 2016/679 (RGPD) y la Ley Orgánica 3/2018 (LOPDGDD)</p>
+
+      <h2>1. Identificación y Responsables del Tratamiento</h2>
+      <p>A efectos de lo dispuesto en el RGPD, la LOPDGDD y la LSSI-CE, se detallan los responsables de los distintos tratamientos de datos personales que tienen lugar a través del sitio web y de la actividad turística:</p>
+      <h3>Alojamiento, Reservas y Huéspedes</h3>
+      <p><strong>Responsable del Tratamiento:</strong> Hanno Gallinger (X0792551V)</p>
+      <p><strong>Ámbito:</strong> Gestión y explotación turística de Casa da Cuncheira (VUT-CO-002236), tramitación de reservas, atención directa, facturación y registro oficial de viajeros (SES.HOSPEDAJES).</p>
+      <p><strong>Domicilio:</strong> Lariño 318, 15292 Carnota (A Coruña)</p>
+      <p><strong>Contacto privacidad:</strong> <a href="mailto:faroinsua@gmail.com">faroinsua@gmail.com</a></p>
+
+      <h3>Sitio Web, Analítica y Cookies</h3>
+      <p><strong>Responsable del Tratamiento:</strong> César Caamaño Beiro (53549213S)</p>
+      <p><strong>Ámbito:</strong> Titular del dominio web, del inmueble y de la habilitación turística oficial VUT-CO-002236. Responsable del entorno digital, analítica y gestión del consentimiento de cookies.</p>
+      <p><strong>Domicilio:</strong> Casa Da Cuncheira - Casa Azul, Aldea Carballal, 70, 15292 Lira, Carnota, A Coruña</p>
+      <p><strong>Contacto privacidad:</strong> <a href="mailto:casadacuncheira@gmail.com">casadacuncheira@gmail.com</a></p>
+
+      <h2>2. Tratamientos de Datos Personales, Finalidades y Bases Jurídicas</h2>
+      <p>A continuación se detallan de forma exhaustiva y transparente los tratamientos de datos personales que realmente se llevan a cabo:</p>
+
+      <h3>A. Gestión de consultas y atención al usuario (Email y Teléfono)</h3>
+      <p><strong>Datos tratados:</strong> Nombre, dirección de correo electrónico, teléfono y contenido del mensaje transmitido por el usuario.</p>
+      <p><strong>Finalidad:</strong> Atender solicitudes de información, dudas de disponibilidad, características de la casa y consultas precontractuales.</p>
+      <p><strong>Base jurídica:</strong> Aplicación de medidas precontractuales a petición del interesado (Art. 6.1.b RGPD) e interés legítimo en atender a los usuarios (Art. 6.1.f RGPD).</p>
+      <p><strong>Conservación:</strong> Durante el tiempo necesario para resolver la consulta y un máximo de 1 año tras su resolución para histórico de soporte, salvo que de ella se derive una reserva.</p>
+
+      <h3>B. Gestión de reservas y prestación del servicio de alojamiento</h3>
+      <p><strong>Datos tratados:</strong> Nombre y apellidos del titular de la reserva, datos de contacto (email, teléfono, dirección), fechas de estancia, número de huéspedes y confirmación de pago.</p>
+      <p><strong>Finalidad:</strong> Tramitar la reserva directa, formalizar la contratación de la estancia, coordinar la entrada (auto check-in o bienvenida) y prestar el servicio de alojamiento.</p>
+      <p><strong>Base jurídica:</strong> Ejecución del contrato de hospedaje en el que el interesado es parte (Art. 6.1.b RGPD).</p>
+      <p><strong>Conservación:</strong> Durante la vigencia de la reserva y, posteriormente, durante el plazo de 5 años para atender posibles responsabilidades civiles contractuales (Art. 1964 Código Civil).</p>
+
+      <h3>C. Registro oficial de viajeros (Parte de Entrada de Hospedaje)</h3>
+      <p><strong>Datos tratados:</strong> Datos de filiación de los huéspedes mayores de 14 años (nombre, apellidos, tipo y número de documento de identidad/pasaporte, nacionalidad, fecha de nacimiento, fecha de entrada/salida y firma).</p>
+      <p><strong>Finalidad:</strong> Confección del parte de entrada de viajeros y comunicación a las Fuerzas y Cuerpos de Seguridad del Estado (Guardia Civil / plataforma SES.HOSPEDAJES) en cumplimiento de la normativa de seguridad ciudadana.</p>
+      <p><strong>Base jurídica:</strong> Cumplimiento de una obligación legal aplicable al responsable del tratamiento (Art. 6.1.c RGPD), en virtud de la Ley Orgánica 4/2015 de Protección de la Seguridad Ciudadana, el Real Decreto 933/2021 de 26 de octubre y el Decreto 12/2017 de la Xunta de Galicia.</p>
+      <p><strong>Conservación:</strong> Los libros-registro y partes de viajeros deben conservarse obligatoriamente durante un periodo de 3 años desde la finalización del servicio de hospedaje, a disposición de las autoridades competentes (Art. 7 RD 933/2021).</p>
+      <p><em>Nota: Estos datos se solicitan exclusivamente durante el proceso de check-in / registro previo a la entrada, no mediante la navegación ordinaria por este sitio web.</em></p>
+
+      <h3>D. Facturación, contabilidad y obligaciones fiscales</h3>
+      <p><strong>Datos tratados:</strong> Nombre, apellidos o razón social, NIF/CIF, dirección fiscal y datos económicos de la estancia.</p>
+      <p><strong>Finalidad:</strong> Emisión de facturas y cumplimiento de obligaciones contables y tributarias.</p>
+      <p><strong>Base jurídica:</strong> Cumplimiento de una obligación legal (Art. 6.1.c RGPD) en aplicación de la Ley 58/2003 General Tributaria y el artículo 30 del Código de Comercio.</p>
+      <p><strong>Conservación:</strong> Entre 4 años (prescripción fiscal) y 6 años (libros contables y justificantes mercantiles).</p>
+
+      <h3>E. Analítica web, cookies y medición estadística agregada</h3>
+      <p><strong>Responsable específico del tratamiento:</strong> César Caamaño Beiro (Titular del sitio web).</p>
+      <p><strong>Datos tratados:</strong> Identificador seudónimo de cliente (_ga), dirección IP anonimizada, páginas visitadas y características técnicas de navegación.</p>
+      <p><strong>Finalidad:</strong> Medición agregada de tráfico, rendimiento técnico y optimización del sitio web mediante Google Analytics.</p>
+      <p><strong>Base jurídica:</strong> Consentimiento explícito del usuario (Art. 6.1.a RGPD y Art. 22.2 LSSI-CE), otorgado a través del banner de cookies.</p>
+      <p><strong>Conservación:</strong> Hasta un máximo de 2 años en el navegador o hasta la retirada del consentimiento.</p>
+
+      <h2>3. Destinatarios y Encargados del Tratamiento</h2>
+      <p>No se cederán datos a terceros salvo imperativo legal. Para la correcta prestación de los servicios, colaboran los siguientes proveedores en calidad de Encargados del Tratamiento (Art. 28 RGPD):</p>
+      <ul>
+        <li><strong>AvaiBook On-line, S.L.U. (Zaragoza, España):</strong> Proveedor del motor de reservas online y software de gestión de hospedaje. Actúa como Encargado del Tratamiento para la tramitación de reservas y como Responsable independiente para su pasarela de pagos seguros bajo normativa PSD2.</li>
+        <li><strong>Google Ireland Limited (Dublín, Irlanda):</strong> Servicios de correo electrónico (Gmail) y analítica web (Google Analytics con Google Consent Mode v2 y anonimización de IP activa).</li>
+        <li><strong>Fuerzas y Cuerpos de Seguridad del Estado (Guardia Civil / SES.HOSPEDAJES):</strong> Cesión por obligación legal en cumplimiento del registro de viajeros.</li>
+        <li><strong>Administración Tributaria (AEAT):</strong> Cesión por obligación legal fiscal.</li>
+      </ul>
+
+      <h2>4. Transferencias Internacionales de Datos</h2>
+      <p>Con carácter general, los datos se almacenan en servidores dentro del Espacio Económico Europeo (EEE). En los casos en que proveedores tecnológicos como Google presten soporte técnico desde EE.UU., las transferencias internacionales se encuentran amparadas en el <strong>Marco de Privacidad de Datos UE-EE.UU. (Data Privacy Framework)</strong> y en la suscripción de Cláusulas Contractuales Tipo (SCC) aprobadas por la Comisión Europea.</p>
+
+      <h2>5. Ejercicio de Derechos</h2>
+      <p>El usuario puede ejercer en cualquier momento sus derechos reconocidos por el RGPD y la LOPDGDD:</p>
+      <ul>
+        <li><strong>Acceso:</strong> Conocer qué datos personales están siendo tratados.</li>
+        <li><strong>Rectificación:</strong> Solicitar la corrección de datos inexactos o incompletos.</li>
+        <li><strong>Supresión («derecho al olvido»):</strong> Solicitar la eliminación de sus datos cuando ya no sean necesarios.</li>
+        <li><strong>Limitación del tratamiento:</strong> Solicitar que se suspenda temporalmente el tratamiento en los supuestos legalmente previstos.</li>
+        <li><strong>Portabilidad:</strong> Recibir los datos en formato estructurado de uso común y lectura mecánica.</li>
+        <li><strong>Oposición:</strong> Oponerse al tratamiento de sus datos por motivos derivados de su situación particular.</li>
+        <li><strong>Retirada del consentimiento:</strong> Retirar en cualquier momento el consentimiento otorgado previamente para cookies analíticas sin afectar a la licitud del tratamiento previo.</li>
+      </ul>
+      <p>Para ejercer estos derechos, puede remitir una solicitud por escrito indicando en el asunto "Protección de Datos - Ejercicio de Derechos" al canal correspondiente:</p>
+      <ul>
+        <li><strong>Para consultas, reservas, facturación y estancia:</strong> <a href="mailto:faroinsua@gmail.com">faroinsua@gmail.com</a> (Hanno Gallinger).</li>
+        <li><strong>Para navegación web, analítica y cookies:</strong> <a href="mailto:casadacuncheira@gmail.com">casadacuncheira@gmail.com</a> (César Caamaño Beiro).</li>
+      </ul>
+
+      <h2>6. Reclamación ante la Autoridad de Control</h2>
+      <p>Si considera que sus derechos no han sido debidamente atendidos o que el tratamiento de sus datos infringe la normativa aplicable, tiene derecho a presentar una reclamación ante la <strong>Agencia Española de Protección de Datos (AEPD)</strong> a través de su sede electrónica (<a href="https://www.aepd.es/" target="_blank" rel="noopener noreferrer">www.aepd.es</a>) o por escrito en C/ Jorge Juan, 6, 28001 Madrid.</p>
+
+      <p><a href="/">Volver a la página principal</a> | <a href="/aviso-legal">Aviso Legal</a> | <a href="/cookies">Política de Cookies</a></p>
+    
+      </article>
+    </main>
+
+    <footer style="padding: 20px; background-color: #1e293b; color: #94a3b8; text-align: center; margin-top: 40px;">
+      <p>© 2026 Casa da Cuncheira. Vivienda de uso turístico VUT-CO-002236 · Lira, Carnota (Costa da Morte).</p>
+      <p style="margin-top: 8px;">
+        <a href="/aviso-legal" style="color: #cbd5e1; margin: 0 8px;">Aviso Legal</a> |
+        <a href="/privacidad" style="color: #cbd5e1; margin: 0 8px;">Política de Privacidad</a> |
+        <a href="/cookies" style="color: #cbd5e1; margin: 0 8px;">Política de Cookies</a>
+      </p>
+    </footer></div>
+</body>
+
+</html>
