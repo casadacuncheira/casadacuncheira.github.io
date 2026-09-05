@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <!-- Google Consent Mode v2 (Strict Zero-Tracking Default) -->
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    
+    // Check for existing consent in localStorage before GTM fires
+    var savedConsent = null;
+    try {
+      var raw = localStorage.getItem('cdc_cookie_consent_v1');
+      if (raw) { savedConsent = JSON.parse(raw); }
+    } catch(e) {}
+
+    var analyticsGranted = (savedConsent && savedConsent.analytics === true);
+
+    gtag('consent', 'default', {
+      'analytics_storage': analyticsGranted ? 'granted' : 'denied',
+      'ad_storage': 'denied',
+      'ad_user_data': 'denied',
+      'ad_personalization': 'denied',
+      'wait_for_update': 500
+    });
+
+    // Only load GTM script immediately if prior explicit consent was granted
+    if (analyticsGranted) {
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || []; w[l].push({
+          'gtm.start': new Date().getTime(), event: 'gtm.js'
+        }); var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+      })(window, document, 'script', 'dataLayer', 'GTM-WFGJHSJ4');
+    }
+  </script>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Primary SEO Meta Tags -->
+  <title>Política de Cookies | Casa da Cuncheira</title>
+  <meta name="description" content="Información sobre las cookies técnicas y analíticas de Casa da Cuncheira, tabla de almacenamiento real y panel de configuración." />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+  <link rel="canonical" href="https://www.casadacuncheira.com/cookies" />
+
+  <!-- Icons -->
+  <link rel="icon" type="image/svg+xml" href="/images/logo.svg" />
+  <link rel="apple-touch-icon" href="/images/logo.svg" />
+  <meta name="theme-color" content="#1e293b" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.casadacuncheira.com/cookies" />
+  <meta property="og:title" content="Política de Cookies | Casa da Cuncheira" />
+  <meta property="og:description" content="Información sobre las cookies técnicas y analíticas de Casa da Cuncheira, tabla de almacenamiento real y panel de configuración." />
+  <meta property="og:image" content="https://www.casadacuncheira.com/images/hero_optimized.webp" />
+  <meta property="og:site_name" content="Casa da Cuncheira" />
+  <meta property="og:locale" content="es_ES" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:url" content="https://www.casadacuncheira.com/" />
+  <meta name="twitter:title" content="Política de Cookies | Casa da Cuncheira" />
+  <meta name="twitter:description" content="Información sobre las cookies técnicas y analíticas de Casa da Cuncheira, tabla de almacenamiento real y panel de configuración." />
+  <meta name="twitter:image" content="https://www.casadacuncheira.com/images/hero_optimized.webp" />
+
+  <!-- Structured Data / JSON-LD -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://www.casadacuncheira.com/#website",
+      "url": "https://www.casadacuncheira.com/",
+      "name": "Casa da Cuncheira",
+      "description": "Alojamiento vacacional en Lira, Carnota (Costa da Morte)",
+      "inLanguage": [
+        "es",
+        "gl",
+        "en",
+        "fr",
+        "de",
+        "it",
+        "pt"
+      ]
+    },
+    {
+      "@type": [
+        "LodgingBusiness",
+        "VacationRental"
+      ],
+      "@id": "https://www.casadacuncheira.com/#lodging",
+      "name": "Casa da Cuncheira",
+      "identifier": "VUT-CO-002236",
+      "description": "Alojamiento vacacional en Lira, Carnota. Casa completa para 6 personas con 4 habitaciones, 2 baños, terraza con vistas al mar, jardín y wifi de alta velocidad en plena Costa da Morte.",
+      "url": "https://www.casadacuncheira.com/",
+      "image": [
+        "https://www.casadacuncheira.com/images/hero_optimized.webp",
+        "https://www.casadacuncheira.com/images/house/house_1.webp",
+        "https://www.casadacuncheira.com/images/house/living_room_1.webp",
+        "https://www.casadacuncheira.com/images/house/terrace_2.webp"
+      ],
+      "telephone": "+34 607 952 250",
+      "email": "casadacuncheira@gmail.com",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Aldea Carballal, 70",
+        "addressLocality": "Carnota",
+        "addressRegion": "A Coruña",
+        "postalCode": "15292",
+        "addressCountry": "ES"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 42.8033613,
+        "longitude": -9.1235535
+      },
+      "numberOfRooms": 4,
+      "occupancy": {
+        "@type": "QuantitativeValue",
+        "maxValue": 6
+      },
+      "petsAllowed": false,
+      "amenityFeature": [
+        {
+          "@type": "LocationFeatureSpecification",
+          "name": "WiFi mediante conexión por antena de telefonía 5G",
+          "value": true
+        },
+        {
+          "@type": "LocationFeatureSpecification",
+          "name": "Vistas al mar",
+          "value": true
+        },
+        {
+          "@type": "LocationFeatureSpecification",
+          "name": "Cocina totalmente equipada",
+          "value": true
+        },
+        {
+          "@type": "LocationFeatureSpecification",
+          "name": "Aire acondicionado",
+          "value": true
+        },
+        {
+          "@type": "LocationFeatureSpecification",
+          "name": "Calefacción",
+          "value": true
+        },
+        {
+          "@type": "LocationFeatureSpecification",
+          "name": "Jardín y terraza exterior",
+          "value": true
+        },
+        {
+          "@type": "LocationFeatureSpecification",
+          "name": "Smart TV",
+          "value": true
+        },
+        {
+          "@type": "LocationFeatureSpecification",
+          "name": "Lavandería",
+          "value": true
+        },
+        {
+          "@type": "LocationFeatureSpecification",
+          "name": "Auto check-in / Entrada autónoma",
+          "value": true
+        }
+      ],
+      "sameAs": [
+        "https://www.airbnb.es/rooms/21168267",
+        "https://www.instagram.com/casa_da_cuncheira/",
+        "https://www.facebook.com/casadacuncheira/"
+      ],
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "bestRating": "5",
+        "worstRating": "1",
+        "reviewCount": "35"
+      }
+    }
+  ]
+}
+  </script>
+  <script type="module" crossorigin src="/assets/index-Dxj9M6ag.js"></script>
+  <link rel="modulepreload" crossorigin href="/assets/vendor-react-DZSZ_G94.js">
+  <link rel="modulepreload" crossorigin href="/assets/vendor-maps-BFu6mpGU.js">
+  <link rel="modulepreload" crossorigin href="/assets/vendor-ui-CT26_sHm.js">
+  <link rel="stylesheet" crossorigin href="/assets/index-kW78OPAC.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Casa da Cuncheira",
+        "item": "https://www.casadacuncheira.com/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Política de Cookies",
+        "item": "https://www.casadacuncheira.com/cookies"
+      }
+    ]
+  }
+  </script>
+</head>
+
+<body>
+  <div id="root">
+    <header style="padding: 20px; background-color: #1e293b; color: #ffffff;">
+      <nav aria-label="Navegación">
+        <a href="/" style="color: #ffffff; text-decoration: none; font-weight: bold; font-size: 1.25rem;">Casa da Cuncheira</a>
+        <span style="margin: 0 10px;">|</span>
+        <a href="/" style="color: #ffffff; text-decoration: none; margin: 0 10px;">Inicio</a>
+        <a href="/nature/que-ver-en-carnota" style="color: #ffffff; text-decoration: none; margin: 0 10px;">Qué ver en Carnota</a>
+        <a href="/nature/lira-carnota" style="color: #ffffff; text-decoration: none; margin: 0 10px;">Lira</a>
+        <a href="/gastronomy" style="color: #ffffff; text-decoration: none; margin: 0 10px;">Gastronomía</a>
+        <a href="/#house" style="color: #ffffff; text-decoration: none; margin: 0 10px;">La Casa</a>
+        <a href="/#contact" style="color: #ffffff; text-decoration: none; margin: 0 10px;">Contacto</a>
+        <a href="/booking" style="color: #ffffff; text-decoration: underline; margin-left: 15px;">Reservar</a>
+      </nav>
+    </header>
+
+    <main style="font-family: system-ui, -apple-system, sans-serif; line-height: 1.6; color: #334155; padding: 40px 20px; max-width: 1000px; margin: 0 auto;">
+      <article>
+        <h1 style="font-size: 2.5rem; color: #0f172a; margin-bottom: 20px;">Política de Cookies</h1>
+        
+      <p style="color: #64748b; font-size: 0.875rem; margin-bottom: 2rem;">Última actualización: Agosto 2026 • En cumplimiento del artículo 22.2 de la LSSI-CE y la Guía sobre el uso de cookies de la AEPD</p>
+
+      <h2>1. ¿Qué son las Cookies y el Almacenamiento Local?</h2>
+      <p>Una cookie es un pequeño archivo de texto que un sitio web descarga en tu navegador o dispositivo al visitarlo. Además de las cookies tradicionales, este sitio web puede utilizar tecnologías de almacenamiento web como <code>localStorage</code> para recordar tus preferencias de privacidad de forma segura y eficiente.</p>
+      <p>Estas herramientas permiten que la página funcione correctamente, recuerde tus selecciones (como el idioma o la aceptación de cookies) y, en su caso, analice estadísticamente las visitas de forma anónima para mejorar el contenido y el rendimiento.</p>
+
+      <h2>2. Inventario Real de Cookies y Almacenamiento Utilizados</h2>
+      <p>En este sitio web únicamente se utilizan las cookies y elementos de almacenamiento estrictamente necesarios o autorizados por el usuario:</p>
+
+      <table style="width: 100%; border-collapse: collapse; margin: 1.5rem 0; font-size: 0.875rem; text-align: left;">
+        <thead>
+          <tr style="background-color: #f1f5f9; border-bottom: 2px solid #e2e8f0;">
+            <th style="padding: 10px;">Nombre</th>
+            <th style="padding: 10px;">Proveedor</th>
+            <th style="padding: 10px;">Finalidad</th>
+            <th style="padding: 10px;">Duración</th>
+            <th style="padding: 10px;">Tipo</th>
+            <th style="padding: 10px;">Consentimiento</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr style="border-bottom: 1px solid #e2e8f0;">
+            <td style="padding: 10px; font-family: monospace; font-weight: bold;">cdc_cookie_consent_v1</td>
+            <td style="padding: 10px;">casadacuncheira.com (Propio)</td>
+            <td style="padding: 10px;">Almacena en <code>localStorage</code> el estado y la fecha de tus preferencias de consentimiento de cookies.</td>
+            <td style="padding: 10px;">1 año</td>
+            <td style="padding: 10px;"><strong>Técnica</strong></td>
+            <td style="padding: 10px;">Exenta (necesaria)</td>
+          </tr>
+          <tr style="border-bottom: 1px solid #e2e8f0;">
+            <td style="padding: 10px; font-family: monospace; font-weight: bold;">_ga</td>
+            <td style="padding: 10px;">Google Analytics (Google Ireland Ltd.)</td>
+            <td style="padding: 10px;">Registra un identificador seudónimo único para generar datos estadísticos agregados sobre cómo el visitante usa el sitio web.</td>
+            <td style="padding: 10px;">2 años (o 14 meses)</td>
+            <td style="padding: 10px;"><strong>Analítica</strong></td>
+            <td style="padding: 10px;">Requiere consentimiento</td>
+          </tr>
+          <tr style="border-bottom: 1px solid #e2e8f0;">
+            <td style="padding: 10px; font-family: monospace; font-weight: bold;">_ga_213MC8TBHN</td>
+            <td style="padding: 10px;">Google Analytics (Google Ireland Ltd.)</td>
+            <td style="padding: 10px;">Mantiene el estado de la sesión y recopila métricas técnicas agregadas.</td>
+            <td style="padding: 10px;">2 años</td>
+            <td style="padding: 10px;"><strong>Analítica</strong></td>
+            <td style="padding: 10px;">Requiere consentimiento</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h2>3. Servicios de Terceros e Incrustaciones de Contenido</h2>
+      <p>El sitio web integra componentes de proveedores externos para mejorar la información turística ofrecida:</p>
+      <ul>
+        <li><strong>Windy.com (Previsión meteorológica):</strong> Se carga mediante un <code>iframe</code> de forma diferida (lazy load). Windy puede gestionar almacenamiento de sesión propio para la interactividad del mapa meteorológico.</li>
+        <li><strong>Google Maps (Localización):</strong> Incrustación técnica para mostrar la ubicación física de la casa y lugares de interés.</li>
+        <li><strong>YouTube (Vídeos turísticos de Ézaro y Carnota):</strong> Se carga utilizando el dominio de privacidad mejorada <code>youtube-nocookie.com</code>, evitando cookies de seguimiento previas a la reproducción del vídeo.</li>
+        <li><strong>Motor de reservas AvaiBook (bookonline.pro):</strong> Al pulsar en «Reservar», el usuario es redirigido de forma segura a la plataforma externa de AvaiBook, la cual aplica su propia política de cookies y seguridad de pagos.</li>
+      </ul>
+
+      <h2>4. Cómo Deshabilitar o Eliminar Cookies desde tu Navegador</h2>
+      <p>Además de utilizar nuestro panel de configuración, puedes permitir, bloquear o eliminar las cookies instaladas en tu equipo configurando las opciones del navegador que utilices:</p>
+      <ul>
+        <li><a href="https://support.google.com/chrome/answer/95647" target="_blank" rel="noopener noreferrer">Google Chrome</a></li>
+        <li><a href="https://support.apple.com/es-es/guide/safari/sfri11471/mac" target="_blank" rel="noopener noreferrer">Apple Safari</a></li>
+        <li><a href="https://support.mozilla.org/es/kb/habilitar-y-deshabilitar-cookies-sitios-web-rastrear-preferencias" target="_blank" rel="noopener noreferrer">Mozilla Firefox</a></li>
+        <li><a href="https://support.microsoft.com/es-es/microsoft-edge/eliminar-las-cookies-en-microsoft-edge-63947406-40ac-c3b8-57b9-2a946a29ae09" target="_blank" rel="noopener noreferrer">Microsoft Edge</a></li>
+      </ul>
+
+      <p><a href="/">Volver a la página principal</a> | <a href="/aviso-legal">Aviso Legal</a> | <a href="/privacidad">Política de Privacidad</a></p>
+    
+      </article>
+    </main>
+
+    <footer style="padding: 20px; background-color: #1e293b; color: #94a3b8; text-align: center; margin-top: 40px;">
+      <p>© 2026 Casa da Cuncheira. Vivienda de uso turístico VUT-CO-002236 · Lira, Carnota (Costa da Morte).</p>
+      <p style="margin-top: 8px;">
+        <a href="/aviso-legal" style="color: #cbd5e1; margin: 0 8px;">Aviso Legal</a> |
+        <a href="/privacidad" style="color: #cbd5e1; margin: 0 8px;">Política de Privacidad</a> |
+        <a href="/cookies" style="color: #cbd5e1; margin: 0 8px;">Política de Cookies</a>
+      </p>
+    </footer></div>
+</body>
+
+</html>

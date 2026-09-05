@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <!-- Google Consent Mode v2 (Strict Zero-Tracking Default) -->
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    
+    // Check for existing consent in localStorage before GTM fires
+    var savedConsent = null;
+    try {
+      var raw = localStorage.getItem('cdc_cookie_consent_v1');
+      if (raw) { savedConsent = JSON.parse(raw); }
+    } catch(e) {}
+
+    var analyticsGranted = (savedConsent && savedConsent.analytics === true);
+
+    gtag('consent', 'default', {
+      'analytics_storage': analyticsGranted ? 'granted' : 'denied',
+      'ad_storage': 'denied',
+      'ad_user_data': 'denied',
+      'ad_personalization': 'denied',
+      'wait_for_update': 500
+    });
+
+    // Only load GTM script immediately if prior explicit consent was granted
+    if (analyticsGranted) {
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || []; w[l].push({
+          'gtm.start': new Date().getTime(), event: 'gtm.js'
+        }); var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+      })(window, document, 'script', 'dataLayer', 'GTM-WFGJHSJ4');
+    }
+  </script>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Primary SEO Meta Tags -->
+  <title>Casa da Cuncheira | Alojamiento vacacional en Lira, Carnota</title>
+  <meta name="description"
+    content="Descubre Casa da Cuncheira, alojamiento vacacional en Lira, Carnota, en plena Costa da Morte. Conoce la casa, sus playas y todo lo que puedes disfrutar durante tu estancia." />
+  <meta name="keywords"
+    content="alojamiento en Lira, alojamiento en Carnota, alquiler vacacional Carnota, alquiler vacacional Lira, casa vacacional Carnota, casa cerca de la playa Carnota, alojamiento Costa da Morte, Casa da Cuncheira, alojamiento cerca de Praia de Cons" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+  <link rel="canonical" href="https://www.casadacuncheira.com/" />
+
+  <!-- Icons -->
+  <link rel="icon" type="image/svg+xml" href="/images/logo.svg" />
+  <link rel="apple-touch-icon" href="/images/logo.svg" />
+  <meta name="theme-color" content="#1e293b" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.casadacuncheira.com/" />
+  <meta property="og:title" content="Casa da Cuncheira | Alojamiento vacacional en Lira, Carnota" />
+  <meta property="og:description"
+    content="Descubre Casa da Cuncheira, alojamiento vacacional en Lira, Carnota, en plena Costa da Morte. Conoce la casa, sus playas y todo lo que puedes disfrutar durante tu estancia." />
+  <meta property="og:image" content="https://www.casadacuncheira.com/images/hero_optimized.webp" />
+  <meta property="og:site_name" content="Casa da Cuncheira" />
+  <meta property="og:locale" content="es_ES" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:url" content="https://www.casadacuncheira.com/" />
+  <meta name="twitter:title" content="Casa da Cuncheira | Alojamiento vacacional en Lira, Carnota" />
+  <meta name="twitter:description"
+    content="Descubre Casa da Cuncheira, alojamiento vacacional en Lira, Carnota, en plena Costa da Morte. Conoce la casa, sus playas y todo lo que puedes disfrutar durante tu estancia." />
+  <meta name="twitter:image" content="https://www.casadacuncheira.com/images/hero_optimized.webp" />
+
+  <!-- Preload Hero Image for Core Web Vitals (LCP) -->
+  <link rel="preload" as="image" href="/images/hero_optimized.webp" type="image/webp" fetchpriority="high" />
+
+  <!-- Structured Data / JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://www.casadacuncheira.com/#website",
+        "url": "https://www.casadacuncheira.com/",
+        "name": "Casa da Cuncheira",
+        "description": "Alojamiento vacacional en Lira, Carnota (Costa da Morte)",
+        "inLanguage": ["es", "gl", "en", "fr", "de", "it", "pt"]
+      },
+      {
+        "@type": ["LodgingBusiness", "VacationRental"],
+        "@id": "https://www.casadacuncheira.com/#lodging",
+        "name": "Casa da Cuncheira",
+        "identifier": "VUT-CO-002236",
+        "description": "Alojamiento vacacional en Lira, Carnota. Casa completa para 6 personas con 4 habitaciones, 2 baños, terraza con vistas al mar, jardín y wifi de alta velocidad en plena Costa da Morte.",
+        "url": "https://www.casadacuncheira.com/",
+        "image": [
+          "https://www.casadacuncheira.com/images/hero_optimized.webp",
+          "https://www.casadacuncheira.com/images/house/house_1.webp",
+          "https://www.casadacuncheira.com/images/house/living_room_1.webp",
+          "https://www.casadacuncheira.com/images/house/terrace_2.webp"
+        ],
+        "telephone": "+34 607 952 250",
+        "email": "casadacuncheira@gmail.com",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Aldea Carballal, 70",
+          "addressLocality": "Carnota",
+          "addressRegion": "A Coruña",
+          "postalCode": "15292",
+          "addressCountry": "ES"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 42.8033613,
+          "longitude": -9.1235535
+        },
+        "numberOfRooms": 4,
+        "occupancy": {
+          "@type": "QuantitativeValue",
+          "maxValue": 6
+        },
+        "petsAllowed": false,
+        "amenityFeature": [
+          { "@type": "LocationFeatureSpecification", "name": "WiFi mediante conexión por antena de telefonía 5G", "value": true },
+          { "@type": "LocationFeatureSpecification", "name": "Vistas al mar", "value": true },
+          { "@type": "LocationFeatureSpecification", "name": "Cocina totalmente equipada", "value": true },
+          { "@type": "LocationFeatureSpecification", "name": "Aire acondicionado", "value": true },
+          { "@type": "LocationFeatureSpecification", "name": "Calefacción", "value": true },
+          { "@type": "LocationFeatureSpecification", "name": "Jardín y terraza exterior", "value": true },
+          { "@type": "LocationFeatureSpecification", "name": "Smart TV", "value": true },
+          { "@type": "LocationFeatureSpecification", "name": "Lavandería", "value": true },
+          { "@type": "LocationFeatureSpecification", "name": "Auto check-in / Entrada autónoma", "value": true }
+        ],
+        "sameAs": [
+          "https://www.airbnb.es/rooms/21168267",
+          "https://www.instagram.com/casa_da_cuncheira/",
+          "https://www.facebook.com/casadacuncheira/"
+        ],
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.9",
+          "bestRating": "5",
+          "worstRating": "1",
+          "reviewCount": "35"
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://www.casadacuncheira.com/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "¿Cuál es la política de cancelación?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Para consultar nuestra política de cancelación, revisa las condiciones disponibles en nuestra página de reservas: https://www.casadacuncheira.com/booking"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Cómo es el acceso en coche y dónde se puede aparcar?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Por las características del acceso, recomendamos dejar el vehículo en la carretera general AC-550 y continuar a pie hasta la casa por un sendero de aproximadamente 120 metros. Es posible acceder en coche hasta la vivienda, pero el camino es estrecho y cuenta con una curva cerrada, por lo que únicamente resulta adecuado para vehículos pequeños (como referencia, tamaño Volkswagen Polo o inferior). Por este motivo, la mayoría de nuestros huéspedes optan por aparcar junto a la carretera general y recorrer a pie el corto trayecto hasta la casa."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Se admiten mascotas en Casa da Cuncheira?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No admitimos mascotas en el alojamiento."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Hay WiFi y qué velocidad tiene?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sí, la casa tiene WiFi mediante conexión por antena de telefonía 5G, perfecta para trabajar en remoto o disfrutar de entretenimiento."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿A qué distancia está la Playa de Carnota?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Las espectaculares playas de Carnota y Louro están a solo 10 minutos en coche, mientras que las playas locales de Cancelo, Cons y Mar de Lira se encuentran a unos 10/15 minutos a pie. Además, en un radio de 15-20 minutos en coche encontrarás muchas otras calas y playas increíbles por descubrir."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Hay supermercados y servicios cerca?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sí, en Carnota (a menos de 10 minutos en coche) y en Muros (a unos 15-20 minutos), encontrarás supermercados, farmacias y todo lo necesario para tu estancia. Además, en Lira hay varias tiendas de comestibles y panaderías locales con productos frescos y de proximidad. Para compras más grandes, en Cee encontrarás también hipermercados y una amplia variedad de comercios y servicios."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Es necesario vehículo para llegar y desplazarse?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Recomendamos disponer de vehículo propio para explorar con comodidad la Costa da Morte, el Monte Pindo, la Cascada del Ézaro y las playas de los alrededores."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿La casa tiene aire acondicionado y calefacción?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sí, la casa cuenta con un sistema de climatización frío/calor, que proporciona tanto aire acondicionado como calefacción, para garantizar una temperatura agradable y el máximo confort en cualquier época del año."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+  <script type="module" crossorigin src="/assets/index-Dxj9M6ag.js"></script>
+  <link rel="modulepreload" crossorigin href="/assets/vendor-react-DZSZ_G94.js">
+  <link rel="modulepreload" crossorigin href="/assets/vendor-maps-BFu6mpGU.js">
+  <link rel="modulepreload" crossorigin href="/assets/vendor-ui-CT26_sHm.js">
+  <link rel="stylesheet" crossorigin href="/assets/index-kW78OPAC.css">
+</head>
+
+<body>
+  <div id="root">
+    <!-- Static Semantic Crawl Fallback (Replaced instantly upon React hydration) -->
+    <header style="padding: 20px; background-color: #1e293b; color: #ffffff;">
+      <nav aria-label="Navegación principal">
+        <a href="/" style="color: #ffffff; text-decoration: none; font-weight: bold; font-size: 1.25rem;">Casa da
+          Cuncheira</a>
+        <span style="margin: 0 10px;">|</span>
+        <a href="#house" style="color: #ffffff; text-decoration: none; margin: 0 10px;">La Casa</a>
+        <a href="#location" style="color: #ffffff; text-decoration: none; margin: 0 10px;">El Entorno</a>
+        <a href="#experiences" style="color: #ffffff; text-decoration: none; margin: 0 10px;">Experiencias</a>
+        <a href="/gastronomy" style="color: #ffffff; text-decoration: none; margin: 0 10px;">Gastronomía</a>
+        <a href="#contact" style="color: #ffffff; text-decoration: none; margin: 0 10px;">Contacto</a>
+        <a href="/aviso-legal" style="color: #ffffff; text-decoration: none; margin: 0 10px;">Aviso Legal y
+          Privacidad</a>
+        <a href="/booking"
+          style="color: #ffffff; text-decoration: underline; margin-left: 15px;">Reservar</a>
+      </nav>
+    </header>
+
+    <main
+      style="font-family: system-ui, -apple-system, sans-serif; line-height: 1.6; color: #334155; padding: 20px; max-width: 1200px; margin: 0 auto;">
+      <article>
+        <section id="hero" style="text-align: center; padding: 40px 0;">
+          <h1 style="font-size: 2.5rem; color: #0f172a; margin-bottom: 15px;">Casa da Cuncheira: alojamiento vacacional
+            en Lira, Carnota</h1>
+          <p style="font-size: 1.25rem; max-width: 800px; margin: 0 auto 25px;">Tu refugio junto al Atlántico, en plena
+            Costa da Morte. Alojamiento vacacional para 6 personas con 4 dormitorios, 2 baños, vistas al mar, terraza
+            exterior y wifi 5G.</p>
+          <a href="/booking"
+            style="display: inline-block; background-color: #0284c7; color: #ffffff; padding: 12px 28px; border-radius: 9999px; text-decoration: none; font-weight: 600;">Consultar
+            Disponibilidad y Reservar</a>
+        </section>
+
+        <section id="features-summary"
+          style="margin: 30px 0; background: #f8fafc; padding: 25px; border-radius: 16px; border: 1px solid #e2e8f0;">
+          <h2 style="font-size: 1.8rem; color: #0f172a; margin-bottom: 10px;">Una casa junto al mar en Lira, Carnota
+          </h2>
+          <p>Casa da Cuncheira es un alojamiento vacacional situado en Lira, en el municipio de Carnota, en plena Costa
+            da Morte. Un lugar desde el que disfrutar del mar, calas tranquilas como Praia de Cons y el impresionante
+            arenal de la Playa de Carnota.</p>
+          <p style="font-weight: 600; color: #0284c7; margin-top: 15px;">6 huéspedes · 4 dormitorios · 2 baños · Wi-Fi
+            5G · Vistas al mar · Terraza y jardín · Climatización · Auto check-in</p>
+          <p style="font-size: 0.9rem; color: #64748b; margin-top: 8px;">Registro oficial de la Xunta de Galicia:
+            Vivienda de uso turístico <strong>VUT-CO-002236</strong></p>
+        </section>
+
+        <section id="house" style="margin: 50px 0;">
+          <h2 style="font-size: 2rem; color: #0f172a; border-bottom: 2px solid #e2e8f0; padding-bottom: 10px;">La Casa:
+            Comodidad, luz natural y vistas al mar</h2>
+          <p>Espacios diseñados para el descanso y la conexión con la naturaleza gallega. Capacidad para hasta 6
+            huéspedes en 4 amplias habitaciones y 2 baños completos.</p>
+          <ul>
+            <li><strong>Capacidad:</strong> 6 personas (4 habitaciones, 2 baños completos)</li>
+            <li><strong>Conectividad:</strong> WiFi mediante conexión 5G para teletrabajo o
+              streaming</li>
+            <li><strong>Vistas y exteriores:</strong> Vistas panorámicas al océano Atlántico, jardín privado y amplia
+              terraza amueblada</li>
+            <li><strong>Equipamiento:</strong> Cocina completa (vitrocerámica, horno, microondas, cafetera),
+              Smart TV, climatización y calefacción</li>
+            <li><strong>Llegada:</strong> Sistema de auto check-in para mayor flexibilidad y comodidad</li>
+            <li><strong>Mascotas:</strong> No se admiten mascotas en el alojamiento</li>
+          </ul>
+        </section>
+
+        <section id="location" style="margin: 50px 0;">
+          <h2 style="font-size: 2rem; color: #0f172a; border-bottom: 2px solid #e2e8f0; padding-bottom: 10px;">Entorno y
+            Playas de Lira, Carnota y Costa da Morte</h2>
+          <p>Ubicada en la parroquia marinera de Lira (Carnota), en un enclave privilegiado para descubrir los tesoros
+            naturales de Galicia:</p>
+          <ul>
+            <li><strong>Lira y sus calas (Praia de Cons, Cancelo y Portocubelo):</strong> Calas naturales entre granito y el
+              puerto marinero tradicional de Lira a pocos minutos a pie.</li>
+            <li><a href="/nature/praia-carnota"><strong>Playa de Carnota y Boca do Río:</strong></a> Más de 7 km de
+              arenal virgen, dunas protegidas y piscinas naturales de agua cristalina a 10 min.</li>
+            <li><a href="/nature/monte-pindo"><strong>Monte Pindo y Pico da Moa:</strong></a> El Olimpo Celta de granito
+              rosado con rutas de senderismo y vistas panorámicas.</li>
+            <li><a href="/nature/monte-louro"><strong>Monte Louro y Lagoa de Xarfas:</strong></a> Espacio natural
+              protegido junto a la ría de Muros e Noia.</li>
+            <li><a href="/nature/fervenza-do-ezaro"><strong>Fervenza do Ézaro:</strong></a> La única cascada de la Península
+              Ibérica que desemboca directamente en el mar.</li>
+            <li><a href="/nature/cabo-finisterre"><strong>Cabo Finisterre:</strong></a> El mítico fin del mundo y los
+              atardeceres más sobrecogedores del Atlántico.</li>
+          </ul>
+        </section>
+
+        <section id="gastronomy" style="margin: 50px 0;">
+          <h2 style="font-size: 2rem; color: #0f172a; border-bottom: 2px solid #e2e8f0; padding-bottom: 10px;">
+            Gastronomía Local en Lira y Carnota</h2>
+          <p>Disfruta de los mejores pescados y mariscos de las lonjas de Lira y Muros. Consulta nuestra <a
+              href="/gastronomy">guía de restaurantes en Carnota y Lira</a>.</p>
+        </section>
+
+        <section id="faq" style="margin: 50px 0;">
+          <h2 style="font-size: 2rem; color: #0f172a; border-bottom: 2px solid #e2e8f0; padding-bottom: 10px;">Preguntas
+            Frecuentes sobre Casa da Cuncheira</h2>
+          <div>
+            <h3>¿Cuál es la política de cancelación?</h3>
+            <p>Para consultar nuestra política de cancelación, revisa las condiciones disponibles en nuestra <a href="/booking">página de reservas</a>.</p>
+            <h3>¿Cómo es el acceso en coche y dónde se puede aparcar?</h3>
+            <p>Por las características del acceso, recomendamos dejar el vehículo en la carretera general AC-550 y continuar a pie hasta la casa por un sendero de aproximadamente 120 metros. Es posible acceder en coche hasta la vivienda, pero el camino es estrecho y cuenta con una curva cerrada, por lo que únicamente resulta adecuado para vehículos pequeños.</p>
+            <h3>¿Se admiten mascotas?</h3>
+            <p>No admitimos mascotas en el alojamiento.</p>
+            <h3>¿Hay WiFi de alta velocidad?</h3>
+            <p>Sí, disponemos de WiFi mediante conexión por antena de telefonía 5G ideal para trabajo remoto.</p>
+            <h3>¿A qué distancia está la playa?</h3>
+            <p>Las espectaculares playas de <strong>Carnota y Louro</strong> están a solo 10 minutos en coche, mientras que las playas locales de <strong>Cancelo, Cons y Mar de Lira</strong> se encuentran a unos 10/15 minutos a pie. Además, en un radio de 15-20 minutos en coche encontrarás muchas otras calas y playas increíbles por descubrir.</p>
+            <h3>¿Hay supermercados y servicios cerca?</h3>
+            <p>Sí, en Carnota (a menos de 10 minutos en coche) y en Muros (a unos 15-20 minutos), encontrarás supermercados, farmacias y todo lo necesario para tu estancia. Además, en Lira hay varias tiendas de comestibles y panaderías locales con productos frescos y de proximidad. Para compras más grandes, en Cee encontrarás también hipermercados y una amplia variedad de comercios y servicios.</p>
+            <h3>¿La casa tiene aire acondicionado y calefacción?</h3>
+            <p>Sí, la casa cuenta con un sistema de climatización frío/calor, que proporciona tanto aire acondicionado como calefacción, para garantizar una temperatura agradable y el máximo confort en cualquier época del año.</p>
+          </div>
+        </section>
+
+        <section id="contact" style="margin: 50px 0;">
+          <h2 style="font-size: 2rem; color: #0f172a; border-bottom: 2px solid #e2e8f0; padding-bottom: 10px;">Contacto
+            y Ubicación</h2>
+          <p><strong>Dirección:</strong> Aldea Carballal, 70, 15292 Lira, Carnota, A Coruña (Galicia, España)</p>
+          <p><strong>Teléfono:</strong> <a href="tel:+34607952250">+34 607 952 250</a> | <strong>Email:</strong> <a
+              href="mailto:faroinsua@gmail.com">faroinsua@gmail.com</a></p>
+          <p><a href="/booking"
+              style="font-weight: bold; color: #0284c7;">Reservar directamente en la web oficial</a></p>
+        </section>
+      </article>
+    </main>
+
+    <footer style="padding: 20px; background-color: #1e293b; color: #94a3b8; text-align: center;">
+      <p>© 2026 Casa da Cuncheira. Vivienda de uso turístico VUT-CO-002236 · Lira, Carnota (Costa da Morte).</p>
+      <p style="margin-top: 8px;">
+        <a href="/aviso-legal" style="color: #94a3b8; font-size: 0.85rem; margin: 0 8px;">Aviso Legal</a> |
+        <a href="/privacidad" style="color: #94a3b8; font-size: 0.85rem; margin: 0 8px;">Política de Privacidad</a> |
+        <a href="/cookies" style="color: #94a3b8; font-size: 0.85rem; margin: 0 8px;">Política de Cookies</a>
+      </p>
+    </footer>
+  </div>
+</body>
+
+</html>
